@@ -1,7 +1,0 @@
-classe Film : titre, durée, réalisateur, genre, année, etc.
-
-classe SalleCinema : numéro, capacité (nombre de places dans la salle)
-
-classe Seance : date, film, salle, nombre de places, nombres de places vendues au tarif normal / nombre de places vendues au tarif réduit
-
-classe Cinema : nom, adresse, nombre de salles, tableau de salles de cinéma, liste de séances (, liste de films), tarif réduit, tarif normal
