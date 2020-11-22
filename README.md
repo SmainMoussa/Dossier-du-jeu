@@ -1,4 +1,1 @@
 # NewGitTest
-
-abc
-new
