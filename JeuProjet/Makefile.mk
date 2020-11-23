@@ -1,6 +1,6 @@
 # gcc : CC
 # warnings : CFLAGS
-# �ditions de liens : LDFLAGS
+# editions de liens : LDFLAGS
 # EXEC
 # pour utiliser ces variables $(CC)
 
