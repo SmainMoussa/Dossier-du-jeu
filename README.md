@@ -1,4 +1,4 @@
-# Instructions azeazeaze
+# Instructions
 
 Pour lancer le jeu soit vous lancez l'executable inclu dans le dossier, si vous voulez le tester le programme vous même j'ai crée un Makefile qui pourra gérer tout cela :
 
