@@ -3,6 +3,7 @@
 #include <time.h>
 #include "menu.h"
 #include "modefacile.h"
+#include "QuestionsReponses.h"
 //#include"player.h"
 
 int main()
