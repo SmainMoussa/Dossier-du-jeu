@@ -18,5 +18,7 @@ Pour l'interface SDL qui n'est pas encore abouti :
 	-Lancer la commande :	
 		gcc src/main.c -o bin/prog -I include -L lib -lmingw32 -lSDL2main -lSDL2
 	qui va créer un executable du nom prog.exe dans le dossier bin en ce servant du main.c dans le 		dossier src
+	-puis lancer : 
+		bin\prog.exe
 
 
