@@ -14,7 +14,7 @@ Pour lancer le jeu soit vous lancez l'executable inclu dans le dossier, si vous 
 
 Pour l'interface SDL qui n'est pas encore abouti :
 
-	- cd C:\\... vers le dossier Interface SDL qui est dans le Dossier-du-jeu
+	- cd C:\\... vers le dossier Interface SDL qui est dans le Dossier-du-jeu/JeuProjet
 	-Lancer la commande :	
 		gcc src/main.c -o bin/prog -I include -L lib -lmingw32 -lSDL2main -lSDL2
 	qui va créer un executable du nom prog.exe dans le dossier bin en ce servant du main.c dans le dossier src
