@@ -1,10 +1,10 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include <time.h>
 #include "menu.h"
 #include "modefacile.h"
 #include "QuestionsReponses.h"
+#include "Structures.h"
 //#include"player.h"
 
 int main()

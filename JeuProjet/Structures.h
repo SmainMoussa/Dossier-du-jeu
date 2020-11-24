@@ -2,7 +2,11 @@
 #define STRUCTURES_H_INCLUDED
 
 #include <time.h>
-struct Joueur
+
+typedef struct Partie partie;
+typedef struct Joueur joueur;
+
+extern struct Joueur
 {
     char nom;
     char prenom;
@@ -10,10 +14,10 @@ struct Joueur
     int genre; // un boolean 1 = garçon, 0 = fille
 };
 
-struct Partie
+extern struct Partie
 {
     int point;
-    int temp;
+    int temps;
     int pénalité;
 };
 
