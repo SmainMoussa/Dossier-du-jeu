@@ -4,7 +4,7 @@
 #include "menu.h"
 #include "modefacile.h"
 //#include"player.h"
-//ABCnnnnnnnnnnnnnnnnn
+
 int main()
 {
 
