@@ -11,7 +11,7 @@ extern struct Joueur
     char nom;
     char prenom;
     int age;
-    int genre; // un boolean 1 = garçon, 0 = fille
+    int genre; // un booleen 1 = garçon, 0 = fille
 };
 
 extern struct Partie
