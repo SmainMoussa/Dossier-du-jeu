@@ -1,5 +1,5 @@
 #include "menu.h"
-#include "modefacile.h"
+#include "mode_jeu.h"
 
 void menu()
 {

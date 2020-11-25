@@ -12,8 +12,8 @@ OBJ = $(SRC:.c= .o)
 
 all : $(EXEC)
 
-$(EXEC) : main.o menu.o modefacile.o
-	$(CC) -o $@ main.o menu.o modefacile.o
+$(EXEC) : main.o menu.o mode_jeu.o
+	$(CC) -o $@ main.o menu.o mode_jeu.o
 
 #%.o : %.c
 #	$(CC) -o $@ -c $< $(CFLAGS)
@@ -22,17 +22,17 @@ menu.o : menu.c
 	gcc -o menu.o -c menu.c $(CFLAGS)
 
 modefacile.o : modefacile.c
-	gcc -o modefacile.o -c modefacile.c $(CFLAGS)
+	gcc -o mode_jeu.o -c mode_jeu.c $(CFLAGS)
 
-clean :
+clear :
 	del *.o
 
-cleanall : clean
+clearall : clear
 	del $(EXEC).exe
 
-# VARIABLES SP�CIALES
-# $@ nom cible exemple r�f�rence au $EXEC du dessus : $(CC) -o $@ main.o player.o
+# VARIABLES SPECIALES
+# $@ nom cible exemple reference au $EXEC du dessus : $(CC) -o $@ main.o player.o
 # $* nom fichier, sans son extension
-# $< nom premiere d�pendance
-# $^ liste des d�pendance
+# $< nom premiere dependance
+# $^ liste des dependance
 
