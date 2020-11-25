@@ -5,16 +5,12 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-typedef struct Partie partie;
-typedef struct Joueur joueur;
-
-struct Joueur
+typedef struct Joueur
 {
-    char nom;
-    int point;
+    char *nom;
+    int chrono;
     int penalite;
-    int temps;
-};
+} Joueur;
 
 struct Partie
 {
