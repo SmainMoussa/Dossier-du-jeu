@@ -1,5 +1,3 @@
-
-
 #ifndef STRUCTURES_H_INCLUDED
 #define STRUCTURES_H_INCLUDED
 
@@ -16,7 +14,6 @@ struct Joueur
     int point;
     int penalite;
     int temps;
-
 };
 
 struct Partie
