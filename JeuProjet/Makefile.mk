@@ -30,9 +30,9 @@ clear :
 clearall : clear
 	del $(EXEC).exe
 
-# VARIABLES SP�CIALES
-# $@ nom cible exemple r�f�rence au $EXEC du dessus : $(CC) -o $@ main.o player.o
+# VARIABLES SPECIALES
+# $@ nom cible exemple reference au $EXEC du dessus : $(CC) -o $@ main.o player.o
 # $* nom fichier, sans son extension
-# $< nom premiere d�pendance
-# $^ liste des d�pendance
+# $< nom premiere dependance
+# $^ liste des dependance
 

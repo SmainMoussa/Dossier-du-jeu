@@ -3,7 +3,7 @@
 
 #include <stdio.h>
 
-extern void menu();
+void menu();
 
 #endif // MENU_H_INCLUDED
 

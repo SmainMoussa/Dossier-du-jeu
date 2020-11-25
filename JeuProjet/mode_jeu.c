@@ -26,31 +26,32 @@ void jeufacile()
             printf("Choisissez votre porte: ");
             scanf("%d", &choix);
             printf("\n");
-        }
-        if (choix == BonnePorte2)
-        {
-            printf("\t\t\t\t\t\t |1|2|3|4|5| Palier 3 \n\n");
-            printf("Choisissez votre porte: ");
-            scanf("%d", &choix);
-            printf("\n");
 
-            if (choix == BonnePorte3)
+            if (choix == BonnePorte2)
             {
-                printf("\t\t\t\t\t\t |1|2|3|4|5| Palier 4 \n\n");
+                printf("\t\t\t\t\t\t |1|2|3|4|5| Palier 3 \n\n");
                 printf("Choisissez votre porte: ");
                 scanf("%d", &choix);
                 printf("\n");
 
-                if (choix == BonnePorte4)
+                if (choix == BonnePorte3)
                 {
-                    printf("\t\t\t\t\t\t |1|2|3|4|5| Palier 5 \n\n");
+                    printf("\t\t\t\t\t\t |1|2|3|4|5| Palier 4 \n\n");
                     printf("Choisissez votre porte: ");
                     scanf("%d", &choix);
+                    printf("\n");
 
-                    if (choix == BonnePorte5)
+                    if (choix == BonnePorte4)
                     {
-                        printf("Fin");
-                        break;
+                        printf("\t\t\t\t\t\t |1|2|3|4|5| Palier 5 \n\n");
+                        printf("Choisissez votre porte: ");
+                        scanf("%d", &choix);
+
+                        if (choix == BonnePorte5)
+                        {
+                            printf("Fin");
+                            break;
+                        }
                     }
                 }
             }
