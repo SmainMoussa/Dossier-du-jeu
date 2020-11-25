@@ -1,3 +1,4 @@
+#if 0
 #ifndef STRUCTURES_H_INCLUDED
 #define STRUCTURES_H_INCLUDED
 
@@ -24,3 +25,4 @@ extern struct Partie
 #endif // STRUCTURES_H_INCLUDED
 
 #define STRUCTURES_H_INCLUDED
+#endif

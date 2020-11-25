@@ -12,8 +12,8 @@ OBJ = $(SRC:.c= .o)
 
 all : $(EXEC)
 
-$(EXEC) : main.o menu.o modefacile.o
-	$(CC) -o $@ main.o menu.o modefacile.o
+$(EXEC) : main.o menu.o mode_jeu.o
+	$(CC) -o $@ main.o menu.o mode_jeu.o
 
 #%.o : %.c
 #	$(CC) -o $@ -c $< $(CFLAGS)
@@ -22,12 +22,12 @@ menu.o : menu.c
 	gcc -o menu.o -c menu.c $(CFLAGS)
 
 modefacile.o : modefacile.c
-	gcc -o modefacile.o -c modefacile.c $(CFLAGS)
+	gcc -o mode_jeu.o -c mode_jeu.c $(CFLAGS)
 
-clean :
+clear :
 	del *.o
 
-cleanall : clean
+clearall : clear
 	del $(EXEC).exe
 
 # VARIABLES SP�CIALES

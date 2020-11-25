@@ -1,8 +1,6 @@
-#include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
+
 #include "menu.h"
-#include "modefacile.h"
+#include "mode_jeu.h"
 #include "QuestionsReponses.h"
 #include "Structures.h"
 //#include"player.h"
@@ -12,13 +10,3 @@ int main()
 
     menu();
 }
-
-/*
-int main(void)
-{
-    char name;
-    Player p1 = create();
-    say(p1, name);
-
-    return 0;
-}*/

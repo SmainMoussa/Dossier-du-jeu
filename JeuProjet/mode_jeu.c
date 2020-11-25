@@ -1,13 +1,11 @@
 
-#include "modefacile.h"
-#include "menu.h"
+#include "mode_jeu.h"
 
 void jeufacile()
 {
 
     int BonnePorte1, BonnePorte2, BonnePorte3, BonnePorte4, BonnePorte5;
     int choix = 0;
-    char choixq;
 
     srand((unsigned)time(NULL));
     BonnePorte1 = rand() % 5 + 1;
