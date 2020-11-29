@@ -9,7 +9,7 @@ EXEC = executable
 CFLAGS = -W -Wall -Wextra
 SRC = $(wildcard *.c)
 OBJ = $(SRC:.c= .o)
-
+ 
 all : $(EXEC)
 
 $(EXEC) : main.o menu.o mode_jeu.o QuestionsReponses.o
