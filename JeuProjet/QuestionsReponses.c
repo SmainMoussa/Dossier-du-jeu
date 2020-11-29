@@ -4,8 +4,8 @@ int QuestionsReponses(int argc, char *argv[])
 {
     srand((unsigned)time(NULL));
     FILE *fichier = NULL;
-    int choix = rand() % 2 + 1;
-    char reponse;
+    int choix = rand() % 15 + 1;
+    char reponse[100] = "";
     char chaine1[100] = "";
     char chaine2[100] = "";
     fichier = fopen("questions.txt", "r");
@@ -24,19 +24,17 @@ int QuestionsReponses(int argc, char *argv[])
     fclose(fichier);
     printf("\n");
     printf("Reponse: ");
-    scanf("%s", &reponse);
+    scanf("%s", reponse);
     fichier = NULL;
     fichier = fopen("reponses.txt", "r");
     if (fichier != NULL)
     {
         for (int i = 1; i <= choix; i++)
         {
-            printf("coucou");
             fgets(chaine2, 100, fichier);
-            printf("coucou: %s", chaine2);
             if (i == choix)
             {
-                if (chaine2 == reponse)
+                if (strcmp(chaine2, reponse) == 0)
                 {
                     fclose(fichier);
                     return 1;

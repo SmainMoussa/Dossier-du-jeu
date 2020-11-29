@@ -12,8 +12,8 @@ OBJ = $(SRC:.c= .o)
 
 all : $(EXEC)
 
-$(EXEC) : main.o menu.o mode_jeu.o
-	$(CC) -o $@ main.o menu.o mode_jeu.o
+$(EXEC) : main.o menu.o mode_jeu.o QuestionsReponses.o
+	$(CC) -o $@ main.o menu.o mode_jeu.o QuestionsReponses.o
 
 #%.o : %.c
 #	$(CC) -o $@ -c $< $(CFLAGS)
@@ -23,6 +23,9 @@ menu.o : menu.c
 
 modefacile.o : modefacile.c
 	gcc -o mode_jeu.o -c mode_jeu.c $(CFLAGS)
+
+QuestionsReponses.o : QuestionsReponses.c
+	gcc -o QuestionsReponses.o -c QuestionsReponses.c $(CFLAGS)
 
 clear :
 	del *.o

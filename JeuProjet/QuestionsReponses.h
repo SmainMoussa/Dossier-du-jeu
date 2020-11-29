@@ -2,7 +2,8 @@
 #define QUESTIONSREPONSES_H_INCLUDED
 
 #include <stdlib.h>
-extern int QuestionsReponses(int argc, char *argv[]);
+#include <stdio.h>
+extern int QuestionsReponses();
 
 #endif // QUESTIONSREPONSES_H_INCLUDED
 
