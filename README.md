@@ -8,9 +8,9 @@ Pour lancer le jeu soit vous lancez l'executable inclu dans le dossier, si vous 
 		make -f Makefile.mk
 	celle-ci va créer un executable.exe qui pourra lancer le jeu.
 	-Si vous souhaiter effacer les fichiers .o :
-		make -f Makefile.mk clean
+		make -f Makefile.mk clear
 	-Pour effacer l'executable + .o : 
-		make -f Makefile.mk cleanall
+		make -f Makefile.mk clearall
 
 Pour l'interface SDL qui n'est pas encore abouti :
 
