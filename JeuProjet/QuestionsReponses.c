@@ -1,13 +1,23 @@
 #include "QuestionsReponses.h"
 
+void strcpy_(char s1[], char s2[])
+{
+    int i;
+
+    for (i = 0; s2[i] != '\0'; s1[i] = s2[i], i++)
+        ;
+    s1[i - 1] = '\0';
+}
+
 int QuestionsReponses(int argc, char *argv[])
 {
     srand((unsigned)time(NULL));
     FILE *fichier = NULL;
-    int choix = rand() % 15 + 1;
+    int choix = rand() % 42 + 1;
     char reponse[100] = "";
     char chaine1[100] = "";
     char chaine2[100] = "";
+    char chaine3[100] = "";
     fichier = fopen("questions.txt", "r");
     if (fichier != NULL)
     {
@@ -23,8 +33,9 @@ int QuestionsReponses(int argc, char *argv[])
     }
     fclose(fichier);
     printf("\n");
-    printf("Reponse: ");
+    printf("REPONSE: ");
     scanf("%s", reponse);
+    printf("\n");
     fichier = NULL;
     fichier = fopen("reponses.txt", "r");
     if (fichier != NULL)
@@ -34,7 +45,8 @@ int QuestionsReponses(int argc, char *argv[])
             fgets(chaine2, 100, fichier);
             if (i == choix)
             {
-                if (strcmp(chaine2, reponse) == 0)
+                strcpy_(chaine3, chaine2);
+                if (strcmp(chaine3, reponse) == 0)
                 {
                     fclose(fichier);
                     return 1;

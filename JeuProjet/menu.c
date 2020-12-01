@@ -28,7 +28,7 @@ void menu()
                 }
                 else if (choix2 == 2) // MODE DIFFICILE DU SOLO
                 {
-                    jeufacile();
+                    jeudifficile();
                     break;
                 }
                 else if (choix2 == 3) // RETOUR AU CHOIX DU SOLO ou MULTIJOUEUR ou QUITTER
@@ -52,7 +52,7 @@ void menu()
                 }
                 else if (choix2 == 2) // MODE DIFFICILE DU MULTIJOUEUR
                 {
-                    jeufacile();
+                    jeudifficile();
                     break;
                 }
                 else if (choix2 == 3) // RETOUR AU CHOIX DU SOLO ou MULTIJOUEUR ou QUITTER

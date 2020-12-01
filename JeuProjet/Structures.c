@@ -3,7 +3,7 @@
 void InitialiseJoueur(Joueur Joueur1, Joueur Joueur2, Joueur Joueur3)
 {
 
-    Joueur1.nom = "VIDE"; // doit être alloué dinamiquement
+    Joueur1.nom = "VIDE";
     Joueur1.chrono = 0;
     Joueur1.penalite = 0;
 

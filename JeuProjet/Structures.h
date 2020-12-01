@@ -12,11 +12,13 @@ typedef struct Joueur
     int penalite;
 } Joueur;
 
+/*
 struct Partie
 {
     char Questions;
     char Reponses;
 };
+*/
 
 #endif // STRUCTURES_H_INCLUDED
 
