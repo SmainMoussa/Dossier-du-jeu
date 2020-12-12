@@ -3,10 +3,10 @@
 #include <time.h>
 #include <windows.h>
 
-clock_t jeufacile (){
+clock_t jeudifficile (){
     int BonnePorte1,BonnePorte2,BonnePorte3,BonnePorte4,BonnePorte5, temp;
     clock_t chrono,debut,fin;
-    int choix=0, penalite=0;
+    int choix=0, penalite=0, vie=3;
     srand( (unsigned)time( NULL ) );
     BonnePorte1= rand()%5+1;
     BonnePorte2= rand()%5+1;
@@ -63,6 +63,16 @@ clock_t jeufacile (){
                                                     Sleep(1000);
                                                 }
                                                 penalite+=3;
+                                                vie-=1;
+                                                if (vie==0){
+                                                    srand( (unsigned)time( NULL ) );
+                                                    BonnePorte1= rand()%5+1;
+                                                    BonnePorte2= rand()%5+1;
+                                                    BonnePorte3= rand()%5+1;
+                                                    BonnePorte4= rand()%5+1;
+                                                    BonnePorte5= rand()%5+1;
+                                                    vie=3;
+                                                }
                                             }
                                         }
                                     } else {
@@ -74,6 +84,16 @@ clock_t jeufacile (){
                                             Sleep(1000);
                                         }
                                         penalite+=3;
+                                        vie-=1;
+                                        if (vie==0){
+                                            srand( (unsigned)time( NULL ) );
+                                            BonnePorte1= rand()%5+1;
+                                            BonnePorte2= rand()%5+1;
+                                            BonnePorte3= rand()%5+1;
+                                            BonnePorte4= rand()%5+1;
+                                            BonnePorte5= rand()%5+1;
+                                            vie=3;
+                                        }
                                     }
                                 }
                             } else {
@@ -85,6 +105,16 @@ clock_t jeufacile (){
                                     Sleep(1000);
                                 }
                                 penalite+=3;
+                                vie-=1;
+                                if (vie==0){
+                                    srand( (unsigned)time( NULL ) );
+                                    BonnePorte1= rand()%5+1;
+                                    BonnePorte2= rand()%5+1;
+                                    BonnePorte3= rand()%5+1;
+                                    BonnePorte4= rand()%5+1;
+                                    BonnePorte5= rand()%5+1;
+                                    vie=3;
+                                }
                             }
                         }
                     } else {
@@ -96,6 +126,16 @@ clock_t jeufacile (){
                             Sleep(1000);
                         }
                         penalite+=3;
+                        vie-=1;
+                        if (vie==0){
+                            srand( (unsigned)time( NULL ) );
+                            BonnePorte1= rand()%5+1;
+                            BonnePorte2= rand()%5+1;
+                            BonnePorte3= rand()%5+1;
+                            BonnePorte4= rand()%5+1;
+                            BonnePorte5= rand()%5+1;
+                            vie=3;
+                        }
                     }
                 }
             } else {
@@ -107,6 +147,16 @@ clock_t jeufacile (){
                     Sleep(1000);
                 }
                 penalite+=3;
+                vie-=1;
+                if (vie==0){
+                    srand( (unsigned)time( NULL ) );
+                    BonnePorte1= rand()%5+1;
+                    BonnePorte2= rand()%5+1;
+                    BonnePorte3= rand()%5+1;
+                    BonnePorte4= rand()%5+1;
+                    BonnePorte5= rand()%5+1;
+                    vie=3;
+                }
             }
         }
     }
