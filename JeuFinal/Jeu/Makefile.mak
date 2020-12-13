@@ -6,32 +6,35 @@
 
 CC = gcc
 EXEC = executable
-CFLAGS = -W -Wall -Wextra
+CFLAGS = -W -Wall -Wextra -O2
 SRC = $(wildcard *.c)
 OBJ = $(SRC:.c= .o)
- 
+
 all : $(EXEC)
 
-$(EXEC) : main.o menu.o mode_jeu.o QuestionsReponses.o JeuMulti.o Structures.o
-	$(CC) -o $@ main.o menu.o mode_jeu.o QuestionsReponses.o JeuMulti.o Structures.o
+$(EXEC) : main.o Menu.o QuestionsReponses.o JeuMulti.o ModeJeu.o Joueur.o
+	$(CC) -o $@ main.o Menu.o QuestionsReponses.o JeuMulti.o ModeJeu.o Joueur.o
 
 #%.o : %.c
 #	$(CC) -o $@ -c $< $(CFLAGS)
 
-menu.o : menu.c
-	gcc -o menu.o -c menu.c $(CFLAGS)
+main.o : main.c
+	gcc -o main.o -c main.c $(CFLAGS)
 
-modefacile.o : modefacile.c
-	gcc -o mode_jeu.o -c mode_jeu.c $(CFLAGS)
+Menu.o : Menu.c
+	gcc -o Menu.o -c Menu.c $(CFLAGS)
 
 QuestionsReponses.o : QuestionsReponses.c
 	gcc -o QuestionsReponses.o -c QuestionsReponses.c $(CFLAGS)
 
-Jeumulti.o : Jeumulti.c
+JeuMulti.o : JeuMulti.c
 	gcc -o JeuMulti.o -c JeuMulti.c $(CFLAGS)
 
-Structures.o : Structures.c
-	gcc -o Structures.o -c Structures.c $(CFLAGS)
+ModeJeu.o : ModeJeu.c
+	gcc -o ModeJeu.o -c ModeJeu.c $(CFLAGS)
+
+Joueur.o : Joueur.c
+	gcc -o Joueur.o -c Joueur.c $(CFLAGS)
 
 clear :
 	del *.o

@@ -1,17 +1,17 @@
-#include "Structures.h"
+#include "Joueur.h"
 
 void InitialiseJoueur(Joueur Joueur1, Joueur Joueur2, Joueur Joueur3)
 {
 
-    //Joueur1.nom = "VIDE";
+    Joueur1.nom = "VIDE";
     Joueur1.chrono = 0;
     Joueur1.penalite = 0;
 
-    //Joueur2.nom = "VIDE";
+    Joueur2.nom = "VIDE";
     Joueur2.chrono = 0;
     Joueur2.penalite = 0;
 
-    //Joueur3.nom = "VIDE";
+    Joueur3.nom = "VIDE";
     Joueur3.chrono = 0;
     Joueur3.penalite = 0;
 }

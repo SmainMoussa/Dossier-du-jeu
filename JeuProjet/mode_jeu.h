@@ -4,9 +4,10 @@
 #include <time.h>
 #include <stdio.h>
 #include <stdlib.h>
+#include <windows.h>
 
-void jeufacile();
-void jeudifficile();
+clock_t jeudifficile();
+clock_t jeufacile();
 
 #endif // MODE_JEU_H_INCLUDED
 

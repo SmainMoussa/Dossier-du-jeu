@@ -1,0 +1,35 @@
+# depslib dependency file v1.0
+1607878452 source:c:\users\dar-5\documents\developpementapplication\dossier-du-jeu\jeufinal\jeu\jeudifficile.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	<windows.h>
+
+1607878426 source:c:\users\dar-5\documents\developpementapplication\dossier-du-jeu\jeufinal\jeu\jeufacile.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	<windows.h>
+
+1607878373 source:c:\users\dar-5\documents\developpementapplication\dossier-du-jeu\jeufinal\jeu\jeumulti.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	<windows.h>
+
+1607878350 source:c:\users\dar-5\documents\developpementapplication\dossier-du-jeu\jeufinal\jeu\joueur.c
+	<stdio.h>
+	<stdlib.h>
+
+1607878247 source:c:\users\dar-5\documents\developpementapplication\dossier-du-jeu\jeufinal\jeu\main.c
+	<stdio.h>
+	<stdlib.h>
+
+1607878317 source:c:\users\dar-5\documents\developpementapplication\dossier-du-jeu\jeufinal\jeu\menu.c
+	<stdio.h>
+	<stdlib.h>
+
+1607878545 source:c:\users\dar-5\documents\developpementapplication\dossier-du-jeu\jeufinal\jeu\questionsreponses.c
+	<stdio.h>
+	<stdlib.h>
+

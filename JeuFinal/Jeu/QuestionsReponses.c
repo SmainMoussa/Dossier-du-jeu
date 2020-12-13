@@ -13,7 +13,7 @@ int QuestionsReponses()
 {
     srand((unsigned)time(NULL));
     FILE *fichier = NULL;
-    int choix = rand() % 42 + 1;
+    int choix = rand() % 25 + 1;
     char reponse[100] = "";
     char chaine1[100] = "";
     char chaine2[100] = "";
