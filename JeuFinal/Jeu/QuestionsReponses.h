@@ -8,7 +8,7 @@
 
 void strcpy_(char s1[], char s2[]);
 
-int QuestionsReponsesfacile(void);
-int QuestionsReponsesdifficile(void);
+int QuestionsReponsesfacile();
+int QuestionsReponsesdifficile();
 
 #endif // QUESTIONSREPONSES_H_INCLUDED
