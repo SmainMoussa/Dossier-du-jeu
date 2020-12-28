@@ -7,9 +7,6 @@
 
 int main(void)
 {
-    Joueur Joueur1, Joueur2, Joueur3;
-    InitialiseJoueur(Joueur1, Joueur2, Joueur3);
-    menu(Joueur1, Joueur2, Joueur3);
-
+    menu();
     return 0;
 }

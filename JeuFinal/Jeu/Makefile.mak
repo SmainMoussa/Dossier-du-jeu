@@ -15,9 +15,6 @@ all : $(EXEC)
 $(EXEC) : main.o Menu.o QuestionsReponses.o JeuMulti.o ModeJeu.o Joueur.o
 	$(CC) -o $@ main.o Menu.o QuestionsReponses.o JeuMulti.o ModeJeu.o Joueur.o
 
-#%.o : %.c
-#	$(CC) -o $@ -c $< $(CFLAGS)
-
 main.o : main.c
 	gcc -o main.o -c main.c $(CFLAGS)
 
@@ -47,4 +44,7 @@ clearall : clear
 # $* nom fichier, sans son extension
 # $< nom premiere dependance
 # $^ liste des dependance
+
+#%.o : %.c
+#	$(CC) -o $@ -c $< $(CFLAGS)
 

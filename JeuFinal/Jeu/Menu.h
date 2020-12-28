@@ -5,6 +5,6 @@
 #include <stdlib.h>
 #include "Joueur.h"
 
-void menu(Joueur Joueur1, Joueur Joueur2, Joueur Joueur3);
+void menu();
 
 #endif // MENU_H_INCLUDED
