@@ -35,3 +35,16 @@ Pour l'interface SDL qui n'est pas encore abouti :
 
 	-puis lancer : 
 		bin\prog.exe
+
+############
+
+- bibliothèques utilisées :
+	stdlib.h
+	stdio.h
+	time.h
+	windows.h
+
+############
+
+- Le jeu présente un mode solo : facile, difficile dans lequels on aura aussi la sauvergarde des scores et le noms des personnes qui ont jouées.
+- Un mode multijoueur dans lequel on pourra prendre le nom des joueurs et afficher le temps à l'écran du joueur qui à gagné. 
