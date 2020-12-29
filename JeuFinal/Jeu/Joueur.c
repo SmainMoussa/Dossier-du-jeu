@@ -28,7 +28,7 @@ void affichejoueurfacile (){
             if (i==1){
                 fscanf(fichier, "%ld %ld %ld", &score[0], &score[1], &score[2]);
             } else if (i==2) {
-                fscanf(fichier, "%s %s %s", nom[0], nom[1], nom[2]);
+                fscanf(fichier, "%s %s %s", &nom[0], &nom[1], &nom[2]);
             }
         }
     }
@@ -59,7 +59,7 @@ void affichejoueurdifficile (){
             if (i==1){
                 fscanf(fichier, "%ld %ld %ld", &score[0], &score[1], &score[2]);
             } else if (i==2) {
-                fscanf(fichier, "%s %s %s", nom[0], nom[1], nom[2]);
+                fscanf(fichier, "%s %s %s", &nom[0], &nom[1], &nom[2]);
             }
         }
     }
