@@ -29,11 +29,11 @@ Pour l'interface SDL qui n'est pas encore abouti :
 
 	- cd .. vers Dossier-du-jeu/JeuFinal/Jeu/Interface SDL, l'interface SDL est dedans 
 
-	- Lancer la commande :	
+	- Lancez la commande :	
 		gcc src/main.c -o bin/prog -I include -L lib -lmingw32 -lSDL2main -lSDL2
 	celle-ci va créer un executable du nom prog.exe dans le dossier bin en ce servant du main.c dans le dossier src
 
-	-puis lancer : 
+	-puis lancez : 
 		bin\prog.exe
 
 ############
