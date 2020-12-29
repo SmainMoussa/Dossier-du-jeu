@@ -41,7 +41,7 @@ void JeuMulti (){
                 printf ("%s gagne la partie!!\n\n", prenom1);
             } else if (chrono1>chrono2){
                 printf ("%s gagne la partie!!\n\n", prenom2);
-            } else if (chrono1==chrono2){  // ==
+            } else if (chrono1==chrono2){
                 printf ("Egalite!!\n\n");
             }
         } else if (choix==2){
